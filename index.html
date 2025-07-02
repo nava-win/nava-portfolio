@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Unicons for icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Swiper for sliders -->
+    <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="./packages/css/styles.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" />
+
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "Hms8I1jXebf0RBJmP",
+        });
+    })();
+    </script>
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-bxU3wwmLZ4MdP1mvTJJmP3U2Jq5i4DPCEpWwS1KMXXEXRDXD0snOvK8gY/2iEVl/sMJg63V8+UnFj6mZVb+DbQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
+    <style>
+      .home__img-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .home__img {
+        width: 270px;
+        height: 270px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .home__social-right {
+        position: absolute;
+        top: 50%;
+        right: -70px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+
+      .home__social-icon {
+        font-size: 1.5rem;
+        color: #00bfff;
+        transition: 0.3s;
+      }
+
+      .home__social-icon:hover {
+        transform: scale(1.2);
+        color: #00ffff;
+      }
+    </style>
+
+    <title>NavaWindah</title>
+</head>
+<body>
+<!-- Header Navigation -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav__logo">Nava Windah Simanjuntak</a>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list grid">
+        <li class="nav__item"><a href="#home" class="nav__link"><i class="uil uil-estate nav__icon"></i>Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a></li>
+        <li class="nav__item"><a href="#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a></li>
+        <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Projects</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact</a></li>
+      </ul>
+      <i class="uil uil-times nav__close" id="nav-close"></i>
+    </div>
+    <div class="nav__btns">
+      <i class="uil uil-moon change-theme" id="theme-button"></i>
+    </div>
+  </nav>
+</header>
+
+<main class="main">
+  <section class="home section" id="home">
+    <div class="hero-background">
+      <canvas id="bgCanvas"></canvas>
+    </div>
+
+    <div class="home__container container grid">
+      <div class="home__content home__content--flex">
+        <div class="home__text">
+          <h1 class="home__title animate__fadeInDown">Hi, I'm <span>Nava Windah Simanjuntak</span></h1>
+          <h3 class="home__subtitle animate__fadeInUp">IT Student Enthusiast|</h3>
+          <p class="home__description animate__fadeInUp">
+            I build innovative, user-focused web apps and love solving real-world problems with code and creativity.
+          </p>
+          <a href="#portfolio" class="button button--flex animate__fadeInUp">
+            View Projects <i class="uil uil-arrow-right button__icon"></i>
+          </a>
+        </div>
+
+        <div class="home__img-container">
+          <img src="./packages/images/nava1.jpeg" alt="Nava Image" class="home__img" />
+
+          <div class="home__social-right">
+            <a href="https://www.linkedin.com/in/navawindahsimanjuntak" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?hl=en#inbox" target="_blank" class="home__social-icon">
+              <i class="uil uil-envelope-alt"></i>
+            </a>
+            <a href="https://www.instagram.com/navaaaws_?igsh=MW5hY3FmamE5cmpyZg==" target="_blank" class="home__social-icon">
+              <i class="uil uil-instagram-alt"></i>
+            </a>
+            <a href="https://github.com/nava-win" target="_blank" class="home__social-icon">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
+
+<!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+            
+
+                <div class="about__container container grid">
+                    <img src="packages/images/nava2.jpeg" alt="" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">
+                            Hello! I'm Nava Windah Simanjuntak, undergraduate student 
+                            majoring in Information Technology at President University, specializing in Artificial Intelligence 
+                            (AI). and utilizing technology to solve real-world 
+                            problems through creativity and code. With hands-on experience in HTML, CSS, JavaScript, 
+                            Python, MYSQL, PHP, and tools like VS Code and GitHub, I enjoy turning complex challenges into 
+                            smart, easy-to-use solutions. 
+                            I'm always excited to grow, contribute, and be part of forward-thinking projects that push the 
+                            boundaries of technology.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS SECTION ====================-->
+<section id="keahlian" class="section" data-aos="flip-up">
+  <h2 class="section__title">Skills</h2>
+  <span class="section__subtitle">My technical level</span>
+
+  <ul class="skills__list">
+    <li><i class="fab fa-html5"></i> HTML</li>
+    <li><i class="fab fa-css3-alt"></i> CSS</li>
+    <li><i class="fab fa-js"></i> JavaScript</li>
+    <li><i class="fab fa-react"></i> React</li>
+    <li><i class="fas fa-database"></i> MySQL</li>
+    <li><i class="fab fa-python"></i> Python</li>
+       <li><i class="fab fa-C++"></i> C++</li>
+    <li><i class="fab fa-java"></i> Java</li>
+    <li><i class="fas fa-laptop-code"></i> Android Studio</li>
+    <li><i class="fab fa-php"></i> PHP</li>
+    <li><i class="fas fa-database"></i> SQLite</li>
+    <li><i class="fas fa-rocket"></i> Netlify</li>
+  </ul>
+</section>
+
+            
+              <!--==================== QUALIFICATION ====================-->
+        <section class="qualification__section" id="qualification">
+  <h2 class="section__title">Education</h2>
+  <div class="qualification__container container grid">
+    <!-- Education Card -->
+    <div class="qualification__card">
+      <i class="uil uil-graduation-cap qualification__icon"></i>
+      <h3 class="qualification__title">IT Undergraduate</h3>
+      <span class="qualification__subtitle">President University</span>
+      <span class="qualification__date"><i class="uil uil-calendar-alt"></i> 2023 - Present</span>
+      <p class="qualification__desc">Specializing in Artificial Intelligence with hands-on web and data projects.</p>
+    </div>
+
+    <!-- SMA Card -->
+    <div class="qualification__card">
+      <i class="uil uil-book-open qualification__icon"></i>
+      <h3 class="qualification__title">SMA Negeri 1 Pematang Siantar</h3>
+      <span class="qualification__subtitle">High School Graduate</span>
+      <span class="qualification__date"><i class="uil uil-calendar-alt"></i> 2020 - 2023</span>
+      <p class="qualification__desc">Science major with strong foundation in logic, math, and computer basics.</p>
+    </div>
+  </div>
+</section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">This my Works</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+        <!--==================== PORTFOLIO 1 ====================-->
+        
+            <!--==================== PORTFOLIO 1 ====================-->
+<div class="portfolio__content grid swiper-slide">
+    <img src="./packages/images/portofolio1.jpg" alt="" class="portfolio__img">
+
+    <div class="portfolio_">
+        <h3 class="portfolio__title">Hand Gesture VolumeControl</h3>
+        <p class="portfolio__description">This project aims to control the volume of a computer using hand gestures 
+          (the distance between the thumb and index finger) in real time.</p>
+           <span class="section__subtitle">use opencv,mediapipe,pyautogui in pycharm,cv2.imshow</span>
+        <a href="https://github.com/nava-win/volumecontrol" target="_blank" class="button button--flex button--small portfolio__button">
+            see
+            <i class="uil uil-arrow-right button__icon"></i>
+        </a>
+    </div>
+</div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/portofolio2.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">autonomous robot Automatic Distance Detection</h3>
+                    <p class="portfolio__description">An autonomous robot built using Arduino that can move forward and avoid obstacles using an ultrasonic sensor and DC motors controlled by an L298N driver.</p>
+                       <span class="section__subtitle">Arduino Uno HC-SR04 Ultrasonic Distance Sensor SG90 Servo Motor L298N Dual H-Bridge Motor Driver 2x DC Motors C++ (Arduino IDE) Robot Chassis with Wheels</span>
+                  <a href="https://github.com/nava-win/autonomous-robot-Arduino" target="_blank" class="button button--flex button--small portfolio__button">
+                        see
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/portofolio3.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_"> 
+                    <h3 class="portfolio__title">web-based image processing and recognition</h3>
+                    <p class="portfolio__description">web-based image processing and recognition tool that provides users with various functionalities to manipulate, analyze, and enhance images.</p>
+                    <span class ="section_subtitle">Backend Python, html, css, js</span>
+                   <a href="https://github.com/Daaaaaav/imageprocessing" target="_blank" class="button button--flex button--small portfolio__button">
+                        see
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+                </div>
+
+            <!-- add arrows-->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            
+        
+        </div>
+
+        </section>
+
+        
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+  <h2 class="section__title">Contact Me</h2>
+  <span class="section__subtitle">If you want to collaborate or have any questions</span>
+
+  <div class="contact__container container grid">
+    <div>
+      <div class="contact__information">
+        <i class="uil uil-phone-alt contact__icon"></i>
+        <div>
+          <h3 class="contact__title">Call me</h3>
+          <span class="contact__subtitle">085261691884</span>
+        </div>
+      </div>
+
+      <div class="contact__information">
+        <i class="uil uil-envelope contact__icon"></i>
+        <div>
+          <h3 class="contact__title">Email</h3>
+          <a href="https://mail.google.com/mail/u/0/?hl=en#inbox"><span class="contact__subtitle">navawinda1@gmail.com</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <form action="" class="contact__form grid" id="contact-form">
+      <div class="contact__inputs grid">
+        <div class="contact__content">
+          <label for="name" class="contact__label">Name</label>
+          <input type="text" name="user_name" id="name" class="contact__input" required />
+        </div>
+
+        <div class="contact__content">
+          <label for="email" class="contact__label">Email</label>
+          <input type="email" name="user_email" id="email" class="contact__input" required />
+        </div>
+      </div>
+
+      <div class="contact__content">
+        <label for="subject" class="contact__label">Subject</label>
+        <input type="text" name="subject" id="subject" class="contact__input" required />
+      </div>
+
+      <div class="contact__content">
+        <label for="message" class="contact__label">Message</label>
+        <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
+      </div>
+
+      <div>
+        <button type="submit" onclick="sendEmail()" class="button button--flex">
+          Send Message
+          <i class="uil uil-message button__icon"></i>
+        </button>
+      </div>
+    </form> -->
+  </div>
+</section>
+
+    </main>
+
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./packages/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./packages/js/main.js"></script>
+   
+    <script src="main.js" />
+
+</script>
+    
+</body>
+
+</html>
